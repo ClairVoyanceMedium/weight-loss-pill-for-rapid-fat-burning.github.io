@@ -1943,4 +1943,256 @@
 }
 </script>
 
+<div class="cta-buttons-container">
+    <a href="https://buy.stripe.com/eVqfZhcnF9pm20N2Rs8N21D" target="_blank" rel="noopener nofollow" class="cta-button" data-tracking-label="PopupVictory" aria-label="Order Victory weight loss capsules from the pop-up">
+        <span style="color:#000; text-shadow:0 0 5px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.6), 0 0 15px rgba(255,255,255,0.4); animation:neon-flicker 1.5s infinite alternate;">Order now the rapid weight loss capsules "Victory"</span>
+    </a>
+    <a href="https://buy.stripe.com/4gwcNa9bmeXl1uo6oX" target="_blank" rel="noopener nofollow" class="cta-button" data-tracking-label="PopupVictory" aria-label="Order psychic reading by email for $8 from the pop-up">
+        <span style="color:#000; text-shadow:0 0 5px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.6), 0 0 15px rgba(255,255,255,0.4); animation:neon-flicker 1.5s infinite alternate;">Psychic reading for 1 question by email - $8.00 US</span>
+    </a>
+    <button class="popup-close-button" id="closePopup" aria-label="Close the pop-up">Close</button>
+</div>
+</div>
+
+<!-- Footer -->
+<footer role="contentinfo">
+    <p>©<span id="footer-year"></span> ClairvoyanceMedium.com – All rights reserved - Free worldwide delivery in 48h - Secure payment</p>
+    <p>No reference to "psychic reading" or "weight loss" on your bank statement. Discretion guaranteed.</p>
+    <p>
+        <a href="mailto:contact.clairvoyancemedium@gmail.com?subject=Information%20request" rel="noopener" onclick="gtag('event', 'footer_link_click', { 'link_name': 'contact' });" aria-label="Contact customer support by email">Contact</a> | 
+        <a href="https://www.clairvoyancemedium.com/Conditions-Generales-des-Ventes-et-d-Utilisation-ccsaaaaaa.asp" target="_blank" rel="noopener" onclick="gtag('event', 'footer_link_click', { 'link_name': 'terms' });" aria-label="View the terms and conditions of sale">Terms and conditions</a> | 
+    </p>
+</footer>
+
+</script nonce="xai-ultra2025">
+
+<!-- JavaScript Scripts -->
+<script nonce="xai-ultra2025">
+    // Dynamic year handling
+    const currentYear = new Date().getFullYear();
+    document.querySelectorAll('#header-year, #header-title-year, #hero-year, #urgency-year, #minceur-urgency-year, #programme-urgency-year, #spiritual-urgency-year, #footer-year').forEach(el => el.textContent = currentYear);
+
+    // Anti-abandon popup handling (all devices, every visit, 12s initial, reappears every 90s)
+    const youtubePopup = document.getElementById('youtubePopup');
+    const closePopup = document.getElementById('closePopup');
+
+    function showPopup() {
+        setTimeout(() => {
+            // Hide the anti-abandon popup to avoid conflicts
+            document.querySelector('.exit-intent-popup')?.classList.remove('active');
+            youtubePopup.classList.add('active');
+            youtubePopup.setAttribute('aria-hidden', 'false');
+            document.getElementById('youtube-popup-heading').focus();
+        }, 12000);
+    }
+
+    closePopup.addEventListener('click', () => {
+        youtubePopup.classList.remove('active');
+        youtubePopup.setAttribute('aria-hidden', 'true');
+        // Show popup again after 90 seconds
+        setTimeout(showPopup, 140000);
+    });
+
+    // Close with Escape key
+    youtubePopup.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            youtubePopup.classList.remove('active');
+            youtubePopup.setAttribute('aria-hidden', 'true');
+            setTimeout(showPopup, 140000);
+        }
+    });
+
+    window.addEventListener('load', showPopup);
+
+    // Carousel handling
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        const inner = carousel.querySelector('.carousel-inner');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const prevBtn = carousel.querySelector('.carousel-prev');
+        const nextBtn = carousel.querySelector('.carousel-next');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            items.forEach((item, index) => {
+                item.classList.toggle('active', index === currentIndex);
+                item.setAttribute('aria-hidden', index !== currentIndex);
+            });
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === items.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        updateCarousel();
+    });
+
+    // "Read more" buttons handling
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+    readMoreButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            btn.textContent = content.style.display === 'block' ? 'Show less' : 'Read more';
+        });
+    });
+
+    // BMI calculator handling
+    const imcForm = document.getElementById('imc-form');
+    const heightInput = document.getElementById('height');
+    const weightInput = document.getElementById('weight');
+    const imcRecommendation = document.getElementById('imc-recommendation');
+    const imcChart = document.getElementById('imc-chart').getContext('2d');
+    let chartInstance = null;
+
+    function validateInput(input, min, max, errorElement) {
+        const value = parseFloat(input.value);
+        if (isNaN(value) || value < min || value > max) {
+            errorElement.style.display = 'block';
+            return false;
+        }
+        errorElement.style.display = 'none';
+        return true;
+    }
+
+    imcForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const heightValid = validateInput(heightInput, 100, 250, document.getElementById('height-error'));
+        const weightValid = validateInput(weightInput, 30, 300, document.getElementById('weight-error'));
+
+        if (heightValid && weightValid) {
+            const height = parseFloat(heightInput.value) / 100;
+            const weight = parseFloat(weightInput.value);
+            const imc = (weight / (height * height)).toFixed(1);
+
+            let category, recommendation, posology;
+            if (imc < 18.5) {
+                category = 'Underweight';
+                recommendation = 'Your BMI indicates underweight. Consult a professional for an adapted plan.';
+                posology = '';
+            } else if (imc < 25) {
+                category = 'Normal weight';
+                recommendation = 'Your BMI is ideal. Maintain your weight with a balanced diet combined with 4 Victory weight loss capsules for "cheat" days. 2 in the morning/evening.';
+                posology = '';
+            } else if (imc < 30) {
+                category = 'Overweight';
+                recommendation = 'You are overweight. Try the <a href="#minceur">Victory capsules</a> for natural and rapid weight loss.';
+                posology = 'Dosage: 2 Victory capsules per day (morning/noon/evening) with a glass of water. That\'s 6 per day, for 3 months to regain a perfectly slim body.';
+            } else {
+                category = 'Obesity';
+                recommendation = 'Your BMI indicates obesity. The <a href="#programme-personnalise">personalized Victory program</a> is ideal for you combined with Victory weight loss capsules';
+                posology = 'Dosage: 2 Victory capsules per day with each meal, combined with the personalized Victory program. That\'s 6 capsules per day, for 4 months to regain your ideal weight.';
+            }
+
+            imcRecommendation.innerHTML = `
+                <p>Your BMI: <strong>${imc}</strong> (${category})</p>
+                <p>${recommendation}</p>
+                <p>${posology}</p>
+            `;
+
+            if (chartInstance) chartInstance.destroy();
+            chartInstance = new Chart(imcChart, {
+                type: 'bar',
+                data: {
+                    labels: ['Your BMI', 'Normal BMI'],
+                    datasets: [{
+                        label: 'BMI',
+                        data: [imc, 22],
+                        backgroundColor: ['#FF69B4', '#87CEEB'],
+                        borderColor: ['#fff', '#fff'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { beginAtZero: true, max: 40 },
+                        x: { ticks: { color: '#fff' } }
+                    },
+                    plugins: { legend: { labels: { color: '#fff' } } }
+                }
+            });
+        }
+    });
+
+    // Audio buttons handling
+    const audioButtons = document.querySelectorAll('.audio-button');
+    let currentUtterance = null;
+
+    audioButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const textIds = button.dataset.textId.split(',');
+            const texts = textIds.map(id => {
+                const elements = document.querySelectorAll(`#${id},.${id},[id*="${id}"]`);
+                return Array.from(elements).map(el => el.textContent.trim()).join(' ');
+            }).join(' ');
+
+            if (button.classList.contains('play-button')) {
+                if (currentUtterance) {
+                    speechSynthesis.cancel();
+                }
+                currentUtterance = new SpeechSynthesisUtterance(texts);
+                currentUtterance.lang = 'en-US';
+                currentUtterance.rate = 1;
+                currentUtterance.pitch = 1;
+                speechSynthesis.speak(currentUtterance);
+
+                button.style.display = 'none';
+                button.nextElementSibling.style.display = 'inline-flex';
+                button.nextElementSibling.classList.add('playing');
+            } else {
+                speechSynthesis.cancel();
+                button.style.display = 'none';
+                button.previousElementSibling.style.display = 'inline-flex';
+                button.classList.remove('playing');
+            }
+        });
+    });
+
+    // Mute button handling for video
+    const muteToggle = document.querySelector('.mute-toggle');
+    const videoIframe = document.querySelector('.video-container iframe');
+    muteToggle.addEventListener('click', () => {
+        const isMuted = muteToggle.textContent.includes('Enable');
+        muteToggle.textContent = isMuted ? 'Disable sound' : 'Enable sound';
+        videoIframe.contentWindow.postMessage(JSON.stringify({
+            event: 'command',
+            func: isMuted ? 'unMute' : 'mute'
+        }), '*');
+    });
+
+    // Google Translate handling
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'af,ar,bg,bn,bs,cs,da,de,el,en,es,et,eu,fa,fi,fr,ga,gl,he,hi,hr,hu,hy,id,is,it,ja,ka,km,ko,lo,lt,lv,mk,ml,ms,mt,my,nl,no,pl,pt,ro,ru,sk,sl,sr,sv,sw,ta,te,th,tl,tr,uk,ur,vi,zh-CN,zh-TW,zu',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // Video error handling
+    videoIframe.addEventListener('error', () => {
+        document.getElementById('video-error').style.display = 'block';
+    });
+
+    // Web Vitals
+    webVitals.getCLS((metric) => console.log('CLS:', metric.value));
+    webVitals.getFID((metric) => console.log('FID:', metric.value));
+    webVitals.getLCP((metric) => console.log('LCP:', metric.value));
+</script>
+    
+</body>
+</html>
 
