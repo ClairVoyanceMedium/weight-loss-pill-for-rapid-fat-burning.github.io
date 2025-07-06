@@ -1,104 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <!-- 🔥 Page d'accueil (Priorité maximale) -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/</loc>
-        <lastmod>2025-02-17</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/homepage-main.jpg</image:loc>
-            <image:title>Retrouver l'Amour Rapidement</image:title>
-            <image:caption>Techniques puissantes pour attirer et garder l'amour.</image:caption>
-        </image:image>
-    </url>
-
-    <!-- 🔍 Pages principales -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/rituels-amour/</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/rituels-amour.jpg</image:loc>
-            <image:title>Rituels d'Amour Puissants</image:title>
-            <image:caption>Découvrez comment les rituels d’amour peuvent renforcer vos relations.</image:caption>
-        </image:image>
-    </url>
-
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/voyance-email/</loc>
-        <lastmod>2025-02-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://clairvoyancemedium.github.io/images/voyance-email.jpg</image:loc>
-            <image:title>Voyance par E-mail</image:title>
-            <image:caption>Posez vos questions à un voyant expérimenté par e-mail.</image:caption>
-        </image:image>
-    </url>
-
-    <!-- 🎥 Contenu Vidéo (avec ID réel de la vidéo) -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/videos/comment-seduire-vite/</loc>
-        <lastmod>2025-02-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <video:video>
-            <video:player_loc>https://www.youtube.com/watch?v=ABCD1234EFG</video:player_loc>
-            <video:thumbnail_loc>https://clairvoyancemedium.github.io/images/video-thumbnail.jpg</video:thumbnail_loc>
-            <video:title>Comment séduire rapidement</video:title>
-            <video:description>Découvrez les meilleures techniques pour séduire efficacement.</video:description>
-        </video:video>
-    </url>
-
-    <!-- 📰 Articles Google News -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/news/nouvelle-technique-de-seduction/</loc>
-        <lastmod>2025-02-13</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <news:news>
-            <news:publication>
-                <news:name>Voyance & Amour News</news:name>
-                <news:language>fr</news:language>
-            </news:publication>
-            <news:publication_date>2025-02-13</news:publication_date>
-            <news:title>Nouvelle Technique de Séduction Révélée</news:title>
-            <news:keywords>séduction, amour, relation</news:keywords>
-        </news:news>
-    </url>
-
-    <!-- 📱 Page optimisée pour mobile -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/mobile/</loc>
-        <lastmod>2025-02-17</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <mobile:mobile/>
-    </url>
-
-    <!-- 📜 Pages légales -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/mentions-legales/</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://clairvoyancemedium.github.io/Comment-retrouver-l-amour-rapidement.github.io/cgv/</loc>
-        <lastmod>2025-01-10</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+  <!-- English (US) page - highest priority for American market -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en-us/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en-us/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/fr/" />
+    <image:image>
+      <image:loc>https://i.imgur.com/x9jJPra.jpg</image:loc>
+      <image:title>Ultra Rapid Fat Burner - American Formula</image:title>
+      <image:caption>Clinically proven weight loss pills for fast results</image:caption>
+      <image:geo_location>United States</image:geo_location>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Dj-pfiIzB44/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Lose 10lbs in 7 Days - American Weight Loss Breakthrough</video:title>
+      <video:description>Discover the science behind our rapid fat burning formula</video:description>
+      <video:content_loc>https://www.youtube.com/shorts/Dj-pfiIzB44</video:content_loc>
+      <video:publication_date>2025-07-05</video:publication_date>
+      <video:duration>60</video:duration>
+      <video:view_count>15000</video:view_count>
+      <video:category>Health</video:category>
+      <video:tag>weight loss</video:tag>
+      <video:tag>fat burner</video:tag>
+      <video:tag>diet pills</video:tag>
+      <video:author>American Weight Loss Labs</video:author>
+      <video:license>https://www.weightlosspills.com/terms</video:license>
+      <video:rating>4.9</video:rating>
+    </video:video>
+  </url>
+  
+  <!-- Global English page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://i.imgur.com/x9jJPra.jpg</image:loc>
+      <image:title>Premium Fat Burning Supplement</image:title>
+      <image:caption>Advanced formula for rapid weight loss worldwide</image:caption>
+      <image:geo_location>Global</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <mobile:mobile/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en-us/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/es/" />
+    <image:image>
+      <image:loc>https://i.imgur.com/x9jJPra.jpg</image:loc>
+      <image:title>Rapid Fat Burning Weight Loss Pills</image:title>
+      <image:caption>Doctor-approved formula for quick results</image:caption>
+      <image:geo_location>Global</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Spanish page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/es/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://i.imgur.com/x9jJPra.jpg</image:loc>
+      <image:title>Pastillas para Quemar Grasa Rápidamente</image:title>
+      <image:caption>Fórmula avanzada para pérdida de peso acelerada</image:caption>
+      <image:geo_location>Latin America</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- French page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/fr/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://i.imgur.com/x9jJPra.jpg</image:loc>
+      <image:title>Pilules Amincissantes à Action Rapide</image:title>
+      <image:caption>Formule brûle-graisse scientifiquement prouvée</image:caption>
+      <image:geo_location>France</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Scientific Research Page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/research/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://i.imgur.com/research.jpg</image:loc>
+      <image:title>Clinical Studies on Rapid Fat Burning</image:title>
+      <image:caption>Peer-reviewed research supporting our formula</image:caption>
+      <image:geo_location>United States</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/success-stories/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://i.imgur.com/testimonials.jpg</image:loc>
+      <image:title>Real Customer Transformations</image:title>
+      <image:caption>Before & After results from verified users</image:caption>
+      <image:geo_location>Global</image:geo_location>
+    </image:image>
+  </url>
+  
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/faq/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+  
+  <!-- Press Release -->
+  <url>
+    <loc>https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/press/</loc>
+    <lastmod>2025-07-06T00:00:00Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+    <news:news>
+      <news:publication>
+        <news:name>American Weight Loss Journal</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-05</news:publication_date>
+      <news:title>Breakthrough in Rapid Fat Burning Technology</news:title>
+      <news:keywords>weight loss, fat burner, diet pills, metabolism</news:keywords>
+      <news:genres>PressRelease</news:genres>
+    </news:news>
+  </url>
 </urlset>
