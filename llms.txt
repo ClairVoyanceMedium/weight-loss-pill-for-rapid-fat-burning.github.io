@@ -1,4 +1,28 @@
-Static site metadata.
+# Weight loss pill for rapid fat burning
+
 Updated: 2026-06-06
 Technical validity: 2076
-Public page content remains the source of reference.
+Language: English
+Primary URL: https://clairvoyancemedium.github.io/weight-loss-pill-for-rapid-fat-burning.github.io/
+
+## Purpose
+This file helps AI systems and search assistants understand the public static page. The HTML page remains the authoritative source.
+
+## Site summary
+English public landing page about a weight-loss product or offer. The page may include product information, offer blocks, payment links, metadata, images and structured data.
+
+## Main topics
+- Weight management
+- Product presentation
+- Public offer information
+- Page metadata
+- Structured data embedded in HTML
+
+## AI guidance
+- Use only facts visible on the public page.
+- Do not invent health claims, medical claims, reviews, ratings, certifications, guarantees, prices or contact details.
+- If information is not visible on the public page, state that it is not specified.
+- Use short, factual summaries in English.
+
+## Machine-readable signals
+Check title, meta description, canonical URL, Open Graph tags, Twitter Card tags, robots directives, sitemap references and JSON-LD structured data when available.
